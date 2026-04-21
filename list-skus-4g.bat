@@ -1,0 +1,1 @@
+az vm list-skus --location centralus --resource-type virtualMachines --query "[?capabilities[?name=='MemoryGB'].value|[0] == '4']" --output table
